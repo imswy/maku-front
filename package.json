@@ -21,6 +21,7 @@
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-vue": "^9.19.2",
     "nuxt": "^3.8.2",
+    "nuxt-icon": "^0.6.7",
     "postcss": "^8.4.31",
     "postcss-px-to-viewport-8-plugin": "^1.2.3",
     "sass": "^1.69.5",
@@ -31,6 +32,9 @@
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
     "@unocss/reset": "^0.57.7",
+    "@vueuse/core": "^10.7.0",
+    "@vueuse/nuxt": "^10.7.0",
+    "easy-typer-js": "^2.1.0",
     "pinia": "^2.1.7"
   }
 }

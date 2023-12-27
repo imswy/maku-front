@@ -1,8 +1,9 @@
 <template>
-  <div>
-    <header></header>
-    <slot />
-    <footer>footer</footer>
+  <div class="h-full w-full flex flex-col">
+    <AppHeader></AppHeader>
+    <div class="flex flex-1 flex-col">
+      <slot />
+    </div>
   </div>
 </template>
 

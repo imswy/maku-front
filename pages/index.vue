@@ -1,18 +1,19 @@
 <template>
-  <h1 class="text-dark-200 text-xl font-600">This is a home page</h1>
-  <ul>
-    <li class="item">1</li>
-    <li class="item">2</li>
-    <li class="item">3</li>
-    <li class="item">4</li>
-  </ul>
-
-  <div
-    class="shadow-lg bg-white w-28 h-28 transition-all-300 cursor-pointer hover:(bg-dark -translate-y-2)"
-  ></div>
-
-  <div class="text-2xl text-dark-200 font-600">
-    name: {{ userStore.userData?.name }} age: {{ userStore.userData?.age }}
+  <HomeBanner></HomeBanner>
+  <div class="mx-auto mb-8 max-w-[1230px] flex flex-col justify-center px-3" style="margin-top: calc(100vh + 30px)">
+    <div class="grid grid-cols-12 gap-4">
+      <div class="col-span-12 lg:col-span-9 space-y-5">
+        <HomeTalkingCarousel></HomeTalkingCarousel>
+        <div class="space-y-5">
+          <HomeArticleCard></HomeArticleCard>
+        </div>
+      </div>
+      <div class="col-span-0 lg:col-span-3">
+      <div class="sticky top-5 space-y-5">
+        <HomeAnnouncement></HomeAnnouncement>
+      </div>
+    </div>
+    </div>
   </div>
 </template>
 
@@ -28,7 +29,4 @@ console.log('formatDate', nuxtApp.$formatDate())
 </script>
 
 <style lang="scss" scoped>
-.item {
-  @apply text-lg text-[#37f] font-500;
-}
 </style>
